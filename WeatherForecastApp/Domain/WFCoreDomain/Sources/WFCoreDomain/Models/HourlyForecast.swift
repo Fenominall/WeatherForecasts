@@ -7,12 +7,30 @@
 
 import Foundation
 
-struct HourlyForecast {
-    let time: String
-    let temperatureCelsius: Double
-    let isDay: Bool
-    let condition: WeatherCondition
-    let humidity: Int
-    let windKph: Double
-    let chanceOfRain: Int
+public struct HourlyForecast {
+    public let time: String
+    public let temperatureCelsius: Double
+    public let isDay: Bool
+    public let condition: WeatherCondition
+    public let humidity: Int
+    public let windKph: Double
+    public let chanceOfRain: Int
+    
+    public init(
+        time: String,
+        temperatureCelsius: Double,
+        isDay: Bool,
+        condition: WeatherCondition,
+        humidity: Int,
+        windKph: Double,
+        chanceOfRain: Int
+    ) {
+        self.time = time
+        self.temperatureCelsius = temperatureCelsius
+        self.isDay = isDay
+        self.condition = condition
+        self.humidity = humidity
+        self.windKph = windKph
+        self.chanceOfRain = chanceOfRain
+    }
 }

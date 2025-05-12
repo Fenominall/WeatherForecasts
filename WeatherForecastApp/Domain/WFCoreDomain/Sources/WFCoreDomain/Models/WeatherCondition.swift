@@ -7,8 +7,18 @@
 
 import Foundation
 
-struct WeatherCondition {
-    let text: String
-    let iconUrl: String
-    let code: Int
+public struct WeatherCondition {
+    public let text: String
+    public let iconUrl: String
+    public let code: Int
+    
+    public init(
+        text: String,
+        iconUrl: String,
+        code: Int
+    ) {
+        self.text = text
+        self.iconUrl = iconUrl
+        self.code = code
+    }
 }

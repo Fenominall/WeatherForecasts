@@ -7,7 +7,15 @@
 
 import Foundation
 
-struct Forecast {
-    let daily: [DailyForecast]
-    let hourly: [HourlyForecast]
+public struct Forecast {
+    public let daily: [DailyForecast]
+    public let hourly: [HourlyForecast]
+    
+    public init(
+        daily: [DailyForecast],
+        hourly: [HourlyForecast]
+    ) {
+        self.daily = daily
+        self.hourly = hourly
+    }
 }
