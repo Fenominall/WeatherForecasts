@@ -1,6 +1,6 @@
 # WeatherForecasts
 
-Welcome to the Weather App! This iOS application provides users with real-time weather forecasts based on their current location. It offers detailed current, hourly, and 7-day weather forecasts for users to plan their day or week ahead.
+This iOS application provides users with real-time weather forecasts based on their current location. It offers detailed current, hourly, and 7-day weather forecasts for users to plan their day or week ahead.
 
 # Features:
 
@@ -10,6 +10,9 @@ Welcome to the Weather App! This iOS application provides users with real-time w
 * **Error Handling**: View error messages if data fetch fails or no network is available.
 
 #
+
+![Weather Forecast Flow](https://github.com/Fenominall/WeatherForecasts/blob/main/WeatherForecastFlow.png)
+
 
 ### BDD Specs
 
