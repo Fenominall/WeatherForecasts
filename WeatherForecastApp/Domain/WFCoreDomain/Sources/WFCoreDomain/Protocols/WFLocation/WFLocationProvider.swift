@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol LocationProvider {
+public protocol WFLocationProvider {
     func getCurrentLocation() async throws -> WFLocation
 }

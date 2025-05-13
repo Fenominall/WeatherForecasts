@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum LocationError: Error, LocalizedError {
+public enum WFLocationError: Error, LocalizedError {
     case permissionDenied
     case unableToDetermineLocation
     case locationServicesDisabled
