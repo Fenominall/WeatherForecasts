@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4FCDBF2D2DD310A000142C4F /* WFCoreDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 4FCDBF2C2DD310A000142C4F /* WFCoreDomain */; };
+		4FCDBF2F2DD310A400142C4F /* WFLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 4FCDBF2E2DD310A400142C4F /* WFLocation */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4FCDBE062DD24CFB00142C4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		4FCDBDEF2DD24CF800142C4F /* WeatherForecastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCDBE052DD24CFB00142C4F /* WeatherForecastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherForecastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCDBE0F2DD24CFB00142C4F /* WeatherForecastAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherForecastAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCDBF142DD3102800142C4F /* WFCoreDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WFCoreDomain; sourceTree = "<group>"; };
+		4FCDBF162DD3103500142C4F /* WFLocation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WFLocation; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCDBF2F2DD310A400142C4F /* WFLocation in Frameworks */,
+				4FCDBF2D2DD310A000142C4F /* WFCoreDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				4FCDBDF12DD24CF800142C4F /* WeatherForecastApp */,
+				4FCDBF152DD3102800142C4F /* Domain */,
+				4FCDBF172DD3103500142C4F /* Location */,
 				4FCDBE082DD24CFB00142C4F /* WeatherForecastAppTests */,
 				4FCDBE122DD24CFB00142C4F /* WeatherForecastAppUITests */,
+				4FCDBF2B2DD3109700142C4F /* Frameworks */,
 				4FCDBDF02DD24CF800142C4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +115,29 @@
 				4FCDBE0F2DD24CFB00142C4F /* WeatherForecastAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4FCDBF152DD3102800142C4F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4FCDBF142DD3102800142C4F /* WFCoreDomain */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4FCDBF172DD3103500142C4F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4FCDBF162DD3103500142C4F /* WFLocation */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		4FCDBF2B2DD3109700142C4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +160,8 @@
 			);
 			name = WeatherForecastApp;
 			packageProductDependencies = (
+				4FCDBF2C2DD310A000142C4F /* WFCoreDomain */,
+				4FCDBF2E2DD310A400142C4F /* WFLocation */,
 			);
 			productName = WeatherForecastApp;
 			productReference = 4FCDBDEF2DD24CF800142C4F /* WeatherForecastApp.app */;
@@ -569,6 +606,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FCDBF2C2DD310A000142C4F /* WFCoreDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WFCoreDomain;
+		};
+		4FCDBF2E2DD310A400142C4F /* WFLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WFLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FCDBDE72DD24CF800142C4F /* Project object */;
 }
