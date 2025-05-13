@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "WFCoreDomain",
+    platforms: [
+        .iOS(.v15)
+    ],
     products: [
         .library(
             name: "WFCoreDomain",

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct WFLocation {
+public struct WFLocation: Sendable {
     public let name: String
     public let country: String
     public let latitude: Double
