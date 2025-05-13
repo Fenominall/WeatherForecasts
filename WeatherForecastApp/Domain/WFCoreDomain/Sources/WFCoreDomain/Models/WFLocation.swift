@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Location {
+public struct WFLocation {
     public let name: String
     public let country: String
     public let latitude: Double
